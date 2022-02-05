@@ -1,0 +1,80 @@
+drop table userMedicamentDose;
+drop table userOrderedMedicament;
+drop table users;
+drop table medicaments;
+drop table substances;
+
+
+
+create table substances
+(
+	id serial primary key,
+	name text
+);
+
+create table medicaments
+(
+	id serial primary key,
+	name text,
+	idSubstance int references substances (id)
+);
+
+create table users
+(
+	id serial primary key,
+	name text	
+);
+
+create table userOrderedMedicament --leki
+(
+	id serial primary key,
+	idUser int references users (id),
+	idMedicament int references medicaments (id),
+	dose float,
+	typeOfDose int,
+	timeOfDay int
+);
+
+create table userMedicamentDose -- konsumpcja 
+(
+	id serial primary key,
+	idUser int references users (id),
+	idMedicament int references medicaments (id),
+	dose float,
+	consumptionDate timestamp
+);
+
+create table consumptionOrderHistory
+(
+	id serial primary key,
+	idUser int references users (id),
+	idMedicament int references medicaments (id),
+	dose float,
+	startDate timestamp,
+	endDate timestamp
+);
+
+create table affectiveBipolarStates
+(
+	id serial primary key,
+	name text
+);
+
+create table userCurrentState
+(
+	id serial primary key,
+	idUser int references users (id),
+	currentDate timestamp,
+	idAffectiveBipolarState int references affectiveBipolarStates (id)
+);
+
+create table consciousMoodChangeReason
+(
+
+);
+
+create table unconsciousMoodChangeReason
+(
+
+);
+
