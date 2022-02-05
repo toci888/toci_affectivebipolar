@@ -1,15 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32106.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.AffectiveBipolar.Ui", "Toci.AffectiveBipolar\Toci.AffectiveBipolar.Ui.csproj", "{6B16CC04-579E-48E3-A160-19322961B757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.AffectiveBipolar.Database.Persistence", "Toci.AffectiveBipolar.Database.Persistence\Toci.AffectiveBipolar.Database.Persistence.csproj", "{16563742-C630-4E3C-A608-5D3AF6A18805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.AffectiveBipolar.Database.Persistence", "Toci.AffectiveBipolar.Database.Persistence\Toci.AffectiveBipolar.Database.Persistence.csproj", "{16563742-C630-4E3C-A608-5D3AF6A18805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.AffectiveBipolar.Bll", "Toci.AffectiveBipolar.Bll\Toci.AffectiveBipolar.Bll.csproj", "{253D7480-AEB5-4D81-B21F-0C77DA54AB4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.AffectiveBipolar.Bll", "Toci.AffectiveBipolar.Bll\Toci.AffectiveBipolar.Bll.csproj", "{253D7480-AEB5-4D81-B21F-0C77DA54AB4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.AffectiveBipolar.Bll.Interfaces", "Toci.AffectiveBipolar.Bll.Interfaces\Toci.AffectiveBipolar.Bll.Interfaces.csproj", "{DE5FC837-4CBB-47DC-BF2C-FED0B9C4A4DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.AffectiveBipolar.Bll.Interfaces", "Toci.AffectiveBipolar.Bll.Interfaces\Toci.AffectiveBipolar.Bll.Interfaces.csproj", "{DE5FC837-4CBB-47DC-BF2C-FED0B9C4A4DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.Common.Bll", "..\toci_common\Toci.Common\Toci.Common.Bll\Toci.Common.Bll.csproj", "{5B1201F5-8E54-4C27-B33A-57CA4E9AE2DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.Common.Bll.Interfaces", "..\toci_common\Toci.Common\Toci.Common.Bll.Interfaces\Toci.Common.Bll.Interfaces.csproj", "{FD39CD1A-4D01-4A31-8A95-627366680264}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.Common.Database", "..\toci_common\Toci.Common\Toci.Common.Database\Toci.Common.Database.csproj", "{CC051C60-4CD0-4B8A-9547-C4EEEAE9E6BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.Common.Database.Interfaces", "..\toci_common\Toci.Common\Toci.Common.Database.Interfaces\Toci.Common.Database.Interfaces.csproj", "{67800D02-0202-42C6-A7D3-49FCFAE4EC96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.Common.Microservices", "..\toci_common\Toci.Common\Toci.Common.Microservices\Toci.Common.Microservices.csproj", "{D7AA9831-639F-412D-8129-85900D78FAB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toci.Common.Microservices.Interfaces", "..\toci_common\Toci.Common\Toci.Common.Microservices.Interfaces\Toci.Common.Microservices.Interfaces.csproj", "{C1BFBD52-9613-4F31-93E3-C5F8548CEA93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.AffectiveBipolar.Tests", "Toci.AffectiveBipolar.Tests\Toci.AffectiveBipolar.Tests.csproj", "{26B3FC3E-5A02-40BB-9B33-DA7633817D32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +47,34 @@ Global
 		{DE5FC837-4CBB-47DC-BF2C-FED0B9C4A4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE5FC837-4CBB-47DC-BF2C-FED0B9C4A4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE5FC837-4CBB-47DC-BF2C-FED0B9C4A4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1201F5-8E54-4C27-B33A-57CA4E9AE2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1201F5-8E54-4C27-B33A-57CA4E9AE2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1201F5-8E54-4C27-B33A-57CA4E9AE2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1201F5-8E54-4C27-B33A-57CA4E9AE2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD39CD1A-4D01-4A31-8A95-627366680264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD39CD1A-4D01-4A31-8A95-627366680264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD39CD1A-4D01-4A31-8A95-627366680264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD39CD1A-4D01-4A31-8A95-627366680264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC051C60-4CD0-4B8A-9547-C4EEEAE9E6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC051C60-4CD0-4B8A-9547-C4EEEAE9E6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC051C60-4CD0-4B8A-9547-C4EEEAE9E6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC051C60-4CD0-4B8A-9547-C4EEEAE9E6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67800D02-0202-42C6-A7D3-49FCFAE4EC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67800D02-0202-42C6-A7D3-49FCFAE4EC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67800D02-0202-42C6-A7D3-49FCFAE4EC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67800D02-0202-42C6-A7D3-49FCFAE4EC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AA9831-639F-412D-8129-85900D78FAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AA9831-639F-412D-8129-85900D78FAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AA9831-639F-412D-8129-85900D78FAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AA9831-639F-412D-8129-85900D78FAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BFBD52-9613-4F31-93E3-C5F8548CEA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BFBD52-9613-4F31-93E3-C5F8548CEA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BFBD52-9613-4F31-93E3-C5F8548CEA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BFBD52-9613-4F31-93E3-C5F8548CEA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B3FC3E-5A02-40BB-9B33-DA7633817D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B3FC3E-5A02-40BB-9B33-DA7633817D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B3FC3E-5A02-40BB-9B33-DA7633817D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B3FC3E-5A02-40BB-9B33-DA7633817D32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

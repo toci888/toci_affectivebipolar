@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\toci_common\Toci.Common\Toci.Common.Bll.Interfaces\Toci.Common.Bll.Interfaces.csproj" />
+    <ProjectReference Include="..\..\toci_common\Toci.Common\Toci.Common.Bll\Toci.Common.Bll.csproj" />
+    <ProjectReference Include="..\..\toci_common\Toci.Common\Toci.Common.Database.Interfaces\Toci.Common.Database.Interfaces.csproj" />
+    <ProjectReference Include="..\..\toci_common\Toci.Common\Toci.Common.Database\Toci.Common.Database.csproj" />
+    <ProjectReference Include="..\..\toci_common\Toci.Common\Toci.Common.Microservices.Interfaces\Toci.Common.Microservices.Interfaces.csproj" />
+    <ProjectReference Include="..\..\toci_common\Toci.Common\Toci.Common.Microservices\Toci.Common.Microservices.csproj" />
+    <ProjectReference Include="..\Toci.AffectiveBipolar.Bll.Interfaces\Toci.AffectiveBipolar.Bll.Interfaces.csproj" />
+    <ProjectReference Include="..\Toci.AffectiveBipolar.Bll\Toci.AffectiveBipolar.Bll.csproj" />
+    <ProjectReference Include="..\Toci.AffectiveBipolar.Database.Persistence\Toci.AffectiveBipolar.Database.Persistence.csproj" />
+    <ProjectReference Include="..\Toci.AffectiveBipolar\Toci.AffectiveBipolar.Ui.csproj" />
+  </ItemGroup>
+
+</Project>
