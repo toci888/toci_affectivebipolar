@@ -1,3 +1,9 @@
+drop table unconsciousMoodChangeReason;
+drop table consciousMoodChangeReason;
+drop table moods;
+drop table userCurrentState;
+drop table affectiveBipolarStates;
+drop table consumptionOrderHistory;
 drop table userMedicamentDose;
 drop table userOrderedMedicament;
 drop table users;
@@ -68,13 +74,29 @@ create table userCurrentState
 	idAffectiveBipolarState int references affectiveBipolarStates (id)
 );
 
+create table moods
+(
+	id serial primary key,
+	mood text
+);
+
 create table consciousMoodChangeReason
 (
-
+	id serial primary key,
+	idUser int references users (id),
+	reason text,
+	currentDate timestamp,
+	idMood int references moods (id),
+	percentageTransition float
 );
 
 create table unconsciousMoodChangeReason
 (
-
+	id serial primary key,
+	idUser int references users (id),
+	reason text,
+	currentDate timestamp,
+	idMood int references moods (id),
+	percentageTransition float
 );
 

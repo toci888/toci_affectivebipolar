@@ -141,9 +141,29 @@ namespace Toci.AffectiveBipolar.Database.Persistence.Models
 
             modelBuilder.Entity<Unconsciousmoodchangereason>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToTable("unconsciousmoodchangereason");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Currentdate).HasColumnName("currentdate");
+
+                entity.Property(e => e.Idmood).HasColumnName("idmood");
+
+                entity.Property(e => e.Iduser).HasColumnName("iduser");
+
+                entity.Property(e => e.Percentagetransition).HasColumnName("percentagetransition");
+
+                entity.Property(e => e.Reason).HasColumnName("reason");
+
+                entity.HasOne(d => d.IdmoodNavigation)
+                    .WithMany(p => p.Unconsciousmoodchangereasons)
+                    .HasForeignKey(d => d.Idmood)
+                    .HasConstraintName("unconsciousmoodchangereason_idmood_fkey");
+
+                entity.HasOne(d => d.IduserNavigation)
+                    .WithMany(p => p.Unconsciousmoodchangereasons)
+                    .HasForeignKey(d => d.Iduser)
+                    .HasConstraintName("unconsciousmoodchangereason_iduser_fkey");
             });
 
             modelBuilder.Entity<User>(entity =>

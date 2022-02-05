@@ -11,6 +11,7 @@ namespace Toci.AffectiveBipolar.Database.Persistence.Models
         {
             Consciousmoodchangereasons = new HashSet<Consciousmoodchangereason>();
             Consumptionorderhistories = new HashSet<Consumptionorderhistory>();
+            Unconsciousmoodchangereasons = new HashSet<Unconsciousmoodchangereason>();
             Usercurrentstates = new HashSet<Usercurrentstate>();
             Usermedicamentdoses = new HashSet<Usermedicamentdose>();
             Userorderedmedicaments = new HashSet<Userorderedmedicament>();
@@ -21,6 +22,7 @@ namespace Toci.AffectiveBipolar.Database.Persistence.Models
 
         public virtual ICollection<Consciousmoodchangereason> Consciousmoodchangereasons { get; set; }
         public virtual ICollection<Consumptionorderhistory> Consumptionorderhistories { get; set; }
+        public virtual ICollection<Unconsciousmoodchangereason> Unconsciousmoodchangereasons { get; set; }
         public virtual ICollection<Usercurrentstate> Usercurrentstates { get; set; }
         public virtual ICollection<Usermedicamentdose> Usermedicamentdoses { get; set; }
         public virtual ICollection<Userorderedmedicament> Userorderedmedicaments { get; set; }

@@ -10,11 +10,13 @@ namespace Toci.AffectiveBipolar.Database.Persistence.Models
         public Mood()
         {
             Consciousmoodchangereasons = new HashSet<Consciousmoodchangereason>();
+            Unconsciousmoodchangereasons = new HashSet<Unconsciousmoodchangereason>();
         }
 
         public int Id { get; set; }
         public string Mood1 { get; set; }
 
         public virtual ICollection<Consciousmoodchangereason> Consciousmoodchangereasons { get; set; }
+        public virtual ICollection<Unconsciousmoodchangereason> Unconsciousmoodchangereasons { get; set; }
     }
 }
