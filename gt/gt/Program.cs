@@ -6,7 +6,7 @@ Console.WriteLine("Hello, World!");
 
 DateValidator dateValidator = new DateValidator();
 
-for (; ; )
+for (; true; )
 {
     Console.WriteLine(" poadaj date ");
     string input = Console.ReadLine();
