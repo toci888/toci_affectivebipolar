@@ -4,17 +4,17 @@ using gt;
 Console.WriteLine("Hello, World!");
 
 
-DateValidator dateValidator = new DateValidator();
+DateValidator dateValidator = new DateValidator(); // typ danych, nazwa zmiennej,operator, instrukcja systemowa, typ danych
 
-for (; true; )
+for (; ; )   // instrukcja pętli , 
 {
-    Console.WriteLine(" poadaj date ");
-    string input = Console.ReadLine();
-    string montht = dateValidator.GetMonth (input);  
+    Console.WriteLine(" poadaj date "); // 
+    string input = Console.ReadLine();  // nazwa typu , nazwa zmiennej , 
+    string montht = dateValidator.GetMonth (input);  // nazwa typu , nazwa zmiennej , obiekt klasy-zmienna
     Console.WriteLine(montht);
 }
 
-PeselValidator peselValidator = new PeselValidator();
+PeselValidator peselValidator = new PeselValidator() ;
 
 peselValidator.Validate("83093043212");
 peselValidator.Validate("83083243212");
