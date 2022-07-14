@@ -14,6 +14,8 @@ for (; ; )   // instrukcja pętli ,
     Console.WriteLine(montht);
 }
 
+int dupa = 0;
+
 PeselValidator peselValidator = new PeselValidator() ;
 
 peselValidator.Validate("83093043212");
