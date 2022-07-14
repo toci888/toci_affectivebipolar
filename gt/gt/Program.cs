@@ -20,7 +20,7 @@ peselValidator.Validate("83093043212");
 peselValidator.Validate("83083243212");
 
 Miesiace tu = new Miesiace();
-
+string dupa = "cokolwiek";
 tu.GetCharacter("Tomek", 2);
 tu.GetCharacter("Tomek Mirosław", 8);
 
